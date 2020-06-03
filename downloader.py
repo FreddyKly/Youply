@@ -45,11 +45,3 @@ class Downloader:
             print('\n', 'Downloaded: ', self.titles)
 
 
-
-# In case we want to automatically process (batch process) all .WEBM video files in a folder we can use the following:
-
-# for FILE in *.webm; do
-#     echo -e "Processing video '\e[32m$FILE\e[0m'";
-#     ffmpeg -i "${FILE}" -vn -ab 128k -ar 44100 -y "${FILE%.webm}.mp3";
-# done;
-# The above script will find all .WEBM files in the folder and process them one after the other.

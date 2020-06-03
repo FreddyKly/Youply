@@ -1,4 +1,4 @@
-import get_started
+from app import MyApp
 
 if __name__ == "__main__":
-    get_started.run()
+    MyApp().run()
