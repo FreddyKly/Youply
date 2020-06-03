@@ -1,7 +1,8 @@
-from pytube3 import Youtube
-from downloader import downloader
-
+from pytube import YouTube
+from downloader import Downloader
+import sys
 
 def run():
-    downloader = downloader()
-    downloader.collect_links
+    url = sys.argv[1]
+    downloader = Downloader()
+    downloader.collect_links(url)
