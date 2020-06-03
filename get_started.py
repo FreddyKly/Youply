@@ -3,10 +3,10 @@ import sys
 
 def run():
     url = sys.argv[1]
-    downloader = Downloader()
-    links = downloader.collect_links(url)
+    downloader_obj = Downloader(url)
+    links = downloader_obj.collect_links()
     file_ext = 'mp3'
     if file_ext == 'mp3':
-        downloader.process_links_mp3(links)
+        downloader_obj.process_links_mp3(links)
     elif file_ext == 'mp4':
-        downloader.process_links_mp4(links)
+        downloader_obj.process_links_mp4(links)
